@@ -1,5 +1,6 @@
 import numpy as np
-def bootrep(data, func):
+
+def bootrep_1d(data, func):
     return func(np.random.choice(data, size=len(data)))
 def draw_bs_reps(data, func, size=1):
     # Initialize array of replicates: bs_reps
